@@ -32,3 +32,18 @@ document.querySelector("#faster").addEventListener("click", function() {
 document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip Ahead");
 });
+
+document.querySelector("#volumeSlider").addEventListener("change", function() {
+	console.log("Volume");
+	console.log(this.value)
+	volume.innerHTML = this.value + "%"
+	video.volume = this.value / 100
+});
+
+document.querySelector("#old").addEventListener("click", function() {
+	console.log("Old School");
+});
+
+document.querySelector("#original").addEventListener("click", function() {
+	console.log("Original");
+});
